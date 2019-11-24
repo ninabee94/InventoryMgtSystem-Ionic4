@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Insert Item
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+  <div class="logo" padding>
+    <ion-img src="../../assets/test.png"></ion-img>
+  </div> 
+
+  <div class="input"><ion-input type="text" [(ngModel)]="name" placeholder="item name"></ion-input></div>
+  <div class="input"><ion-input type="number" [(ngModel)]="quantity" placeholder="quantity"></ion-input></div>
+  <div class="input"><ion-input type="number" [(ngModel)]="price" placeholder="price (RM)"></ion-input></div>
+
+  <br><br>
+
+  <div class="button"><ion-button (click)="save()">save</ion-button></div>
+
+  {{userid}}
+
+</ion-content>

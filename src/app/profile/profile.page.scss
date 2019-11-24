@@ -1,0 +1,18 @@
+.logo{
+    width:100%;
+    ion-img{ margin:auto; height:100px; width:100px; }
+}
+
+.input{
+    padding:3px;
+    ion-input{
+       border:1px solid black; width:90%; font-size:15px; 
+       text-align:center; margin:auto;
+       --placeholder-font-weight:3;
+    }
+}
+
+.button{
+    width:100%; padding:3px; text-align:center;
+    ion-button{ width:70%; }
+}

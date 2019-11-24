@@ -1,0 +1,12 @@
+.option{
+    display:flex; width:100%; text-align:center;
+    border: 1px solid blue; padding: 1px;
+    div{ width:100%; padding:2px; }
+    .selected { background-color:blue; color:white; }
+    .unselected { background-color:white; color:blue; }
+}
+
+.barchart, .piechart  {
+    border: 1px solid black;
+    width:80%; height:auto; margin:auto;
+}

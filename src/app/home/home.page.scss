@@ -1,0 +1,16 @@
+.logo{
+    width:100%;
+    ion-img{ margin:auto; height:100px; width:100px; }    
+}
+
+.title{
+    text-align:center; font-size:13px;
+}
+
+ion-grid{
+    width:90%; margin:auto; border:1px solid green;
+    font-size:12px;
+    ion-row{ width:100%; }
+    .head{ color:green; font-size:9px; }
+    ion-button{ font-size:10px; width:100%; }
+}

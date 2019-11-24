@@ -1,0 +1,21 @@
+<ion-content padding>
+
+    <div class="logo" padding>
+      <ion-img src="../../assets/test.png"></ion-img>
+    </div>
+  
+    <div class="input"><ion-input type="text" [(ngModel)]="email" placeholder="email"></ion-input></div>
+    <div class="input"><ion-input type="text" [(ngModel)]="name" placeholder="name"></ion-input></div>
+    <div class="input"><ion-input type="text" [(ngModel)]="position" placeholder="position"></ion-input></div>
+    <div class="input"><ion-input type="password" [(ngModel)]="password" placeholder="password"></ion-input></div>
+    <div class="input"><ion-input type="password" [(ngModel)]="repassword" placeholder="re-type password"></ion-input></div>
+  
+    <br><br>
+  
+    <div class="button"><ion-button (click)="register()">Register</ion-button></div>
+
+    <ion-button class="back" (click)="back()">
+      <ion-icon name="arrow-back" mode="ios"></ion-icon>BACK
+    </ion-button>
+  
+  </ion-content>

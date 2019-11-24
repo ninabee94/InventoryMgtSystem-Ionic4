@@ -1,0 +1,33 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu type="overlay">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Inventory Management</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content><br>
+        <div class="profile" padding>  
+          <div class="logo">
+            <ion-img src="../../assets/test.png"></ion-img>
+          </div>
+          <div><b>{{api.user[0].email}}</b></div>
+          <div><b>{{api.user[0].name}}</b></div>
+          <div><b>{{api.user[0].position}}</b></div>
+        </div>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+      <ion-menu-toggle class="logout" padding><ion-button (click)="api.logout()">LOGOUT</ion-button></ion-menu-toggle>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

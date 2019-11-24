@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="logo" padding>
+    <ion-img src="../../assets/test.png"></ion-img>
+  </div>     
+
+   <div class="title"><b>{{api.item.length}}</b> item in inventory</div>
+
+   <br>
+
+  <div *ngFor="let inv of api.item" padding>
+   <ion-grid padding>
+      <ion-row>
+        <ion-col size="2" class="head">ID</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="9"><b>{{inv._id}}</b></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="head">NAME</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="9"><b>{{inv.name}}</b></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="head">QTY</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="9"><b>{{inv.quantity}}</b></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="head">PRICE</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="6"><b>RM {{inv.price}}</b></ion-col>
+        <ion-col size="3"><ion-button size="small" (click)="delete(inv._id)" no-padding>DELETE</ion-button></ion-col>        
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <br><br>
+
+</ion-content>

@@ -1,0 +1,28 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+.logout{
+    position:absolute; z-index:100;
+    bottom:5px; width:100%;
+    ion-button{ width:100%; }
+}
+
+.profile{ 
+    width:90%; border:1px solid green;
+    margin:auto;
+    div{ padding:2px; color:green; font-size:13px; text-align:center; }
+}
+
+.logo{
+    width:100%;
+    ion-img{ margin:auto; height:80px; width:80px; }
+}

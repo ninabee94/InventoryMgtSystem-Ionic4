@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        View Stat
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+
+  <div class="option">
+    <div class={{item_stat}} (click)="change('item')">Item Stat</div>
+    <div class={{price_stat}} (click)="change('price')">Price Stat</div>
+  </div>
+
+  <br><br>
+  
+  <div padding *ngIf="item_stat=='selected'">    
+      <b>Item Stat</b><br><br>
+      <canvas  #chartcanvas class="barchart"></canvas>
+  </div>  
+
+  <div padding *ngIf="price_stat=='selected'">    
+      <b>Price Stat</b><br><br>
+      <canvas  #piecanvas class="piechart"></canvas>
+  </div>  
+
+</ion-content>
