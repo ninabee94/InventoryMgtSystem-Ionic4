@@ -12,7 +12,9 @@
 ![alt](https://user-images.githubusercontent.com/57636419/69488056-72fd1900-0e9f-11ea-93c6-89c715766f96.JPG)
 
 
-     
+ 
+ 
+ 
      3. Add & Update Item, Update Profile
 
 ![alt](https://user-images.githubusercontent.com/57636419/69488057-785a6380-0e9f-11ea-941a-443faa83297e.JPG)
