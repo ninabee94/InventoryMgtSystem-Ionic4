@@ -4,7 +4,7 @@
      backend (Express.js): https://github.com/ninabee94/InventoryMgtSystem-API-Express
      databse (mongoDB): https://github.com/ninabee94/InventoryMgtSystem-mongoDB
      
-=============================================================================================
+=======================================
 
      1. Login & Register
 
