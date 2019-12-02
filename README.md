@@ -2,7 +2,7 @@
 
      frontend (Ionic): https://github.com/ninabee94/InventoryMgtSystem-Ionic4
      backend (Express.js): https://github.com/ninabee94/InventoryMgtSystem-API-Express
-     databse (mongoDB): https://github.com/ninabee94/InventoryMgtSystem-mongoDB
+     database (mongoDB): https://github.com/ninabee94/InventoryMgtSystem-mongoDB
      
 =======================================
 
